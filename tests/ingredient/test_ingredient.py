@@ -20,13 +20,12 @@ def test_ingredient():
 
     # verifica se o conjunto dos ingredientes
     assert Ingredient("frango").restrictions == {
-        Restriction.ANIMAL_MEAT, 
+        Restriction.ANIMAL_MEAT,
         Restriction.ANIMAL_DERIVED
     }
 
     # verifica se o conjunto dos ingredientes
     assert Ingredient("creme de leite").restrictions == {
-        Restriction.LACTOSE, 
+        Restriction.LACTOSE,
         Restriction.ANIMAL_DERIVED
     }
-
